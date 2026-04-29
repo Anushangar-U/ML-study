@@ -50,7 +50,7 @@ Test_houses = pd.DataFrame({
 
 print(f"\n{'='*50}")
 print("PREDICTIONS FOR NEW HOUSES:")
-predictions = best_model.predict(Test_houses)
+predictions = best_model.predict()
 for i, price in enumerate(predictions):
     print(f"House {i+1}: ${price:,.2f}")
 
