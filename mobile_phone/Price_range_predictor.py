@@ -20,7 +20,7 @@ print(f"Training samples: {X_train.shape[0]}")
 print(f"Testing samples: {X_test.shape[0]}")
 
 # Train model
-model = DecisionTreeClassifier(max_depth=5, random_state=1)
+model = DecisionTreeClassifier(max_depth=5, random_state=1, min_samples_split=10, min_samples_leaf=4)
 model.fit(X_train, y_train)
 
 # Predictions
